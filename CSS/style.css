@@ -1,0 +1,77 @@
+
+body {
+    background: url("https://wallpapercave.com/wp/wp2763910.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+}
+.container{
+text-align: center;
+}
+.container ul{
+  display: inline-flex;
+  list-style:none;
+  color:#fff ;
+
+}
+.container ul li{
+  width: 140px;
+  margin: 5px;
+  padding: 5px;
+}
+.container ul li a{
+  color: #fff;
+  text-decoration: none;
+
+}
+
+h1,h3{
+    color:blue;background-color: aqua ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:30px ;
+    font-weight:bold;
+    font-style:italic ;
+    border: 30px solid blanchedalmond
+    }
+    p{
+        color:brown;background-color:rosybrown;
+        font-family: 'Times New Roman', Times, serif;
+        font-size:30px ;
+        font-weight:bold;
+        font-style:italic ;
+        border: 5px solid black
+    }
+    header .highlight, header .current a{
+      font-weight:bold;
+    }
+    header{
+      padding-top:30px;
+      min-height:70px;
+    }
+    footer{
+      padding:20px;
+      margin-top:20px;
+      text-align: center;
+    }
+
+.primary-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+header nav ul li{
+  display: inline;
+  margin-right: 400px;
+}
