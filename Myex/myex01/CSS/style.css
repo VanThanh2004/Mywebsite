@@ -1,0 +1,25 @@
+body {
+    background: url("https://i.pinimg.com/originals/fb/d6/40/fbd640cce182881a8710e31a60ecad60.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+     text-align: none;
+}
+h1,h3{
+    color:blue;background-color: aqua ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:30px ;
+    font-weight:bold;
+    font-style:italic ;
+    border: 30px solid blanchedalmond
+    }
+    p{
+        color:brown;background-color:rosybrown;
+        font-family: 'Times New Roman', Times, serif;
+        font-size:30px ;
+        font-weight:bold;
+        font-style:italic ;
+        border: 5px solid black
+
+    }
