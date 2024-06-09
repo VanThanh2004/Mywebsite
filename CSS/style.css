@@ -90,14 +90,14 @@
 
 .menu ul li {
     display: inline-block;
-    margin-left:3px; /
+    margin-left:10px; /
 }
 
 .menu ul li a {
     text-decoration: none; 
     color:#333 ;
     background-color: #cccccc;
-    padding: 2px; 
+    padding: 88px; 
 }
 
 .menu ul li a:hover {
