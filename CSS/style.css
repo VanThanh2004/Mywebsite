@@ -447,3 +447,27 @@
 #newsletter div a {
   margin-right:5px
 }
+@media screen and (max-width: 768px) {
+  .services-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .services-box {
+    margin-bottom: 20px;
+  }
+}
+
+/* Thiết lập layout dạng hàng trên máy tính xách tay */
+@media screen and (min-width: 769px) {
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .services-box {
+    width: calc(33.33% - 20px); /* Chia 3 cột và để khoảng cách giữa chúng là 20px */
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .services-box:last-child {
+    margin-right: 0;
+  }
