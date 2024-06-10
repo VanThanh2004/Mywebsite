@@ -47,7 +47,7 @@
       font-size:33px;background-color:rosybrown;
       color:#fff;
       font-style: bold;
-      border: 5px solid black
+      border: 5px solid black;
     }
 
   #main-col p {
@@ -55,7 +55,7 @@
     text-align: center;
     font-size: 25px;
     font-style: bold;
-    border: 5px solid black
+    border: 5px solid black;
 
   }
   header {
