@@ -1,5 +1,12 @@
+// Image Slider
 const portfolioImages = document.querySelectorAll('.portfolio-box img');
 let currentIndex = 0;
+
+// Set initial state
+portfolioImages.forEach((img, index) => {
+    img.style.opacity = index === currentIndex ? 1 : 0;
+    img.style.transition = 'opacity 1s'; // Smooth transition
+});
 
 function slideImages() {
     portfolioImages[currentIndex].style.opacity = 0;
@@ -7,22 +14,29 @@ function slideImages() {
     portfolioImages[currentIndex].style.opacity = 1;
 }
 
-setInterval(slideImages, 5000); // Tự động chuyển đổi hình ảnh sau mỗi 5 giây
+setInterval(slideImages, 5000); // Auto-slide every 5 seconds
+
+// Contact Form Handling
 const contactForm = document.querySelector('#contact form');
 
 contactForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Ngăn chặn việc gửi Form mặc định
+    event.preventDefault(); // Prevent default form submission
 
-    // Thu thập dữ liệu từ Form
-    const name = contactForm.querySelector('input[type="text"]').value;
-    const email = contactForm.querySelector('input[type="email"]').value;
-    const message = contactForm.querySelector('textarea').value;
+    // Collect form data
+    const name = contactForm.querySelector('input[type="text"]').value.trim();
+    const email = contactForm.querySelector('input[type="email"]').value.trim();
+    const message = contactForm.querySelector('textarea').value.trim();
 
-    // Xử lý dữ liệu ở đây (ví dụ: gửi dữ liệu đến một API hoặc lưu vào cơ sở dữ liệu)
+    // Basic validation
+    if (!name || !email || !message) {
+        alert('Please fill in all fields.');
+        return;
+    }
 
-    // Sau khi xử lý, bạn có thể hiển thị một thông báo thành công cho người dùng
-    alert('Dữ liệu đã được gửi thành công!');
-
-    // Sau khi xử lý, bạn có thể làm sạch Form
-    contactForm.reset();
+    // Data processing (e.g., send data to an API or save to a database)
+    // Example: simulate data processing with a timeout
+    setTimeout(() => {
+        alert('Data submitted successfully!');
+        contactForm.reset(); // Clear the form
+    }, 1000);
 });
